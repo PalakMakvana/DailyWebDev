@@ -1,2 +1,5 @@
 # DailyWebDev
 Daily web development projects and coding practice with HTML, CSS, JS.
+
+Day1 : Simple Job Application Form using HTML & CSS
+
