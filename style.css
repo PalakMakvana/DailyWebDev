@@ -1,79 +1,153 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 body {
-  background-color: gray;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #0f172a;
+  color: #e0e7ff;
+  margin: 0;
+  line-height: 1.6;
 }
-.container {
-  max-width: 900px;
-  margin: 0 auto;
+.hero {
+  position: relative;
+  height: 60vh;
+  background: url("https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/9f715a5b-713a-47ac-8039-1c3acc09e7e8.png")
+    no-repeat center center/cover;
 }
-.content {
-  max-width: 600px;
-  padding: 20px;
-  background-color: #fff;
-  margin: 0 auto;
-  margin-top: 40px;
-  box-shadow: 4px 3px 5px;
-  border-radius: 10px;
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.75);
 }
-
-.from_container {
-  margin: 30px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
+.hero-text {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  font-weight: 600;
+  font-size: clamp(1rem, 2.5vw, 2rem);
+  letter-spacing: 0.1em;
+  z-index: 1;
+  text-align: center;
 }
-
-.form_control {
+.hero-text span {
+  font-weight: 800;
+  font-size: clamp(1.25rem, 5vw, 3rem);
+  color: #a78bfa;
+}
+.services {
+  max-width: 1200px;
+  margin: 3rem auto;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  padding: 0 1rem;
+}
+.card {
+  background: #1e293b;
+  color: #cbd5e1;
+  border-radius: 0.5rem;
+  box-shadow: 0 8px 20px rgba(167, 139, 250, 0.35);
+  flex: 1 1 250px;
+  max-width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
-
-label {
-  font-size: 15px;
-  margin-bottom: 8px;
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(167, 139, 250, 0.6);
+  color: #e0e7ff;
 }
-input,
-select,
-textarea {
-  padding: 6px 10px;
-  border: 1px solid gray;
-  border-radius: 4px;
-  font-size: 15px;
-}
-
-input:focus {
-  outline-color: rgb(145, 140, 140);
-}
-
-.button_container {
-  display: flex;
-  justify-content: flex-end;
-  margin: 20px;
-}
-
-button {
-  background-color: gray;
-  font-size: 18px;
-  border: 2px inset black;
-  padding: 5px 10px;
-  border-radius: 8px;
-  transition: 1s ease-in;
-}
-
-button:hover {
-  background-color: red;
-  border: 2px solid black;
-  color: white;
-  transition: 1s ease-out;
-  cursor: pointer;
-}
-
-.textarea {
-  grid-column: 1 / span 2;
+.card-image img {
   width: 100%;
+  height: 170px;
+  object-fit: cover;
+}
+.card-content {
+  padding: 1rem 1.25rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card-title {
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: #a78bfa;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+.card-desc {
+  font-size: 0.9rem;
+  color: #cbd5e1;
+  text-align: center;
+}
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 3rem auto 0;
+  max-width: 1000px;
+  background: #312e81;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 8px 16px rgba(167, 139, 250, 0.25);
+}
+.footer-section {
+  flex: 1 1 300px;
+  padding: 1.5rem 2rem;
+  color: #c7d2fe;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  border-right: 2px solid #8b5cf6;
+}
+.footer-section:last-child {
+  border-right: none;
+  background: #a78bfa;
+  color: #1e293b;
+  font-weight: 600;
+}
+.footer-section h3 {
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+  text-align: center;
+}
+.footer-section a {
+  color: inherit;
+  text-decoration: none;
+  font-weight: 600;
+}
+.footer-section a:hover {
+  text-decoration: underline;
+}
+footer {
+  text-align: center;
+  margin: 2rem 0 1rem;
+  color: #8b5cf6;
+  font-size: 0.75rem;
+  font-weight: 500;
+  font-family: "Courier New", Courier, monospace;
+  letter-spacing: 0.15em;
+}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero {
+    height: 40vh;
+  }
+  .services {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-container {
+    flex-direction: column;
+  }
+  .footer-section {
+    border-right: none;
+    border-bottom: 2px solid #8b5cf6;
+  }
+  .footer-section:last-child {
+    border-bottom: none;
+  }
 }

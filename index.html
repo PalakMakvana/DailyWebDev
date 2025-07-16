@@ -2,84 +2,109 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Job Application Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Developer Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container">
-      <div class="content">
-        <h1>Job Application <span>(web)</span></h1>
-        <form action=""></form>
-        <div class="from_container">
-          <div class="form_control">
-            <label for="first_name">First Name</label>
-            <input
-              type="text"
-              id="first_name"
-              name="first_name"
-              placeholder="Enter First Name"
-            />
-          </div>
-          <div class="form_control">
-            <label for="last_name">Last Name</label>
-            <input
-              type="text"
-              id="last_name"
-              name="last_name"
-              placeholder="Enter Last Name"
-            />
-          </div>
-          <div class="form_control">
-            <label for="email">Email</label>
-            <input
-              type="email"
-              id="first_name"
-              name="first_nam"
-              placeholder="Enter email"
-            />
-          </div>
-          <div class="form_control">
-            <label for="job_role">Job Roles</label>
-            <select>
-              <option value="job_role">Select job Roles</option>
-              <option value="frontend">Frontend</option>
-              <option value="backend">Backend</option>
-              <option value="full_stack">Full Stack</option>
-              <option value="ui_ux">UI UX Designer</option>
-            </select>
-          </div>
-          <div class="textarea">
-            <label for="address">Address</label>
-            <textarea
-              name="address"
-              id="address"
-              rows="4"
-              cols="50"
-              placeholder="Enter Your Address"
-            ></textarea>
-          </div>
-          <div class="form_control">
-            <label for="city">City</label>
-            <input type="city" name="city" id="city" />
-          </div>
-          <div class="form_control">
-            <label for="pin">Pincode</label>
-            <input type="number" name="pincode" id="pincode" />
-          </div>
-          <div class="form_control">
-            <label for="date">Date</label>
-            <input value="2024-12-31" type="date" name="date" id="date" />
-          </div>
-          <div class="form_control">
-            <label for="upload">Upload Your CV</label>
-            <input type="file" name="upload" id="upload" />
-          </div>
-        </div>
-        <div class="button_container">
-          <button type="submit">Apply Now</button>
-        </div>
+    <section
+      class="hero"
+      role="banner"
+      aria-label="Developer working on computer with coding screens"
+    >
+      <div class="hero-text" aria-live="polite">
+        WORK, I CAN DO FOR <span>YOU</span>
       </div>
-    </div>
+    </section>
+
+    <section class="services" aria-label="Developer Services">
+      <article
+        class="card"
+        tabindex="0"
+        aria-labelledby="service1-title"
+        aria-describedby="service1-desc"
+      >
+        <div class="card-image">
+          <img src="img/app.jpg" alt="" onerror="this.onerror=null;" />
+        </div>
+        <div class="card-content">
+          <h4 class="card-title" id="service1-title">App Development</h4>
+          <p class="card-desc" id="service1-desc">
+            Build intuitive and powerful applications with modern design and
+            robust functionality to fit your needs.
+          </p>
+        </div>
+      </article>
+
+      <article
+        class="card"
+        tabindex="0"
+        aria-labelledby="service2-title"
+        aria-describedby="service2-desc"
+      >
+        <div class="card-image">
+          <img src="img/web.jpg" alt="" onerror="this.onerror=null;" />
+        </div>
+        <div class="card-content">
+          <h4 class="card-title" id="service2-title">Web Development</h4>
+          <p class="card-desc" id="service2-desc">
+            Create responsive, accessible websites and web apps that engage
+            users and perform flawlessly across devices.
+          </p>
+        </div>
+      </article>
+
+      <article
+        class="card"
+        tabindex="0"
+        aria-labelledby="service3-title"
+        aria-describedby="service3-desc"
+      >
+        <div class="card-image">
+          <img src="img/ui-ux.jpg" alt="" onerror="this.onerror=null;" />
+        </div>
+        <div class="card-content">
+          <h4 class="card-title" id="service3-title">UX/UI Designing</h4>
+          <p class="card-desc" id="service3-desc">
+            Design beautiful, user-centric interfaces with seamless experiences
+            that bring satisfaction to your customers.
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <section
+      class="footer-container"
+      aria-label="Contact and About Information"
+    >
+      <div class="footer-section" tabindex="0">
+        <h3>Contact Me</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipiscing elit. Maximus
+          dolores excepturi libero praesentium.
+        </p>
+        <p>
+          <a
+            href="mailto:tonystark@starkindustries.com"
+            aria-label="Email Tony Stark at tonystark@starkindustries.com"
+            >tonystark@starkindustries.com</a
+          >
+        </p>
+      </div>
+      <div class="footer-section" tabindex="0">
+        <h3>About Me</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+          ipsum minus possimus, illo hic illum sunt harum.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque sed
+          odio veritatis error corrupti hic! Lorem ipsum dolor sit amet.
+        </p>
+      </div>
+    </section>
+
+    <footer role="contentinfo">OFFICIAL WEBSITE OF TONY STARK</footer>
   </body>
 </html>
