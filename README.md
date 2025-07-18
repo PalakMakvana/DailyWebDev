@@ -5,4 +5,5 @@ Day1 : Simple Job Application Form using HTML & CSS
 
 Day2 : Developer Landing Page 
 
-Day3 : A Restaurant Website - Project inspired by: DoSomeCoding channel
+Day3 (Project-1): A Restaurant Website - Project inspired by: DoSomeCoding channel
+     (Project-2): A web-based random picture generator.
