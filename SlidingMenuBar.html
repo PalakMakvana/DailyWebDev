@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sliding Menu-bar</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+
+      body {
+        background-color: #111;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      ul {
+        list-style: none;
+      }
+
+      ul li {
+        width: 50px;
+        height: 50px;
+        position: relative;
+        background-color: #fff;
+        margin: 12px 0;
+        cursor: pointer;
+        border-radius: 7px;
+        box-shadow: inset 0 0 0 5px rgba(0, 0, 0, 0.9);
+      }
+
+      ul li i {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 20px;
+        color: #000000;
+      }
+
+      .icons {
+        position: absolute;
+        top: 0;
+        left: 50px;
+        width: 0;
+        height: 50px;
+        background-color: #263238;
+        border-radius: 5px;
+        overflow: hidden;
+        transition: width 0.5s ease;
+      }
+
+      .icons p {
+        text-align: center;
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 20px;
+        font-weight: 800;
+        line-height: 50px;
+        transition: opacity 0.5s ease;
+        opacity: 0;
+      }
+
+      ul li:hover .icons {
+        width: 200px;
+      }
+
+      ul li:hover .icons p {
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <ul>
+        <li>
+          <i class="ri-home-4-fill"></i>
+          <div class="icons">
+            <p>Home</p>
+          </div>
+        </li>
+
+        <li>
+          <i class="ri-user-fill"></i>
+          <div class="icons">
+            <p>Profile</p>
+          </div>
+        </li>
+
+        <li>
+          <i class="ri-phone-fill"></i>
+          <div class="icons">
+            <p>Contact</p>
+          </div>
+        </li>
+
+        <li>
+          <i class="ri-message-fill"></i>
+          <div class="icons">
+            <p>Message</p>
+          </div>
+        </li>
+
+        <li>
+          <i class="ri-settings-fill"></i>
+          <div class="icons">
+            <p>Settings</p>
+          </div>
+        </li>
+
+        <li>
+          <i class="ri-poker-hearts-fill"></i>
+          <div class="icons">
+            <p>Like</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
