@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Calendar</title>
+    <style>
+      body {
+        background-color: #b8c9da;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-family: "Arial", sans-serif;
+      }
+      .calendar {
+        background-color: #194a7a;
+        width: 220px;
+        height: 250px;
+        border-radius: 20px;
+        text-align: center;
+        padding: 20px;
+        transition: transform 0.3s;
+        box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px,
+          rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px,
+          rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px,
+          rgba(0, 0, 0, 0.07) 0px 32px 64px;
+      }
+      .calendar:hover {
+        transform: scale(1.02);
+      }
+      .month {
+        font-size: 32px;
+        font-weight: bold;
+        color: #a3b7ca;
+        margin-bottom: 10px;
+        padding: 10px 0;
+        border-bottom: 2px solid #a3b7ca;
+      }
+      .day {
+        font-size: 72px;
+        font-weight: bold;
+        border: 0.5px solid #a3b7ca;
+        border-radius: 8px;
+        color: #dbdada;
+      }
+      .day-of-week,
+      .year {
+        font-size: 20px;
+        margin: 15px 0;
+        color: #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="calendar" id="calendar">
+      <div class="month" id="month"></div>
+      <div class="day-of-week" id="dayOfWeek"></div>
+      <div class="day" id="day"></div>
+      <div class="year" id="year"></div>
+    </div>
+
+    <script>
+      function updateDate() {
+        const now = new Date();
+        const options = {
+          month: "long",
+          weekday: "long",
+          year: "numeric",
+          day: "numeric",
+        };
+        const formattedDate = now.toLocaleDateString("en", options).split(", ");
+
+        document.getElementById("month").innerText = formattedDate[0];
+        document.getElementById("dayOfWeek").innerText = formattedDate[1];
+        document.getElementById("day").innerText = now.getDate();
+        document.getElementById("year").innerText = now.getFullYear();
+      }
+
+      setInterval(updateDate, 1000);
+      updateDate();
+    </script>
+  </body>
+</html>
