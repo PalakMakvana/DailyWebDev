@@ -11,3 +11,5 @@ Day3 (Project-1): A Restaurant Website - Project inspired by: DoSomeCoding chann
 Day4 : Music Web design using HTML & CSS 
 
 Day5 : Created a simple sliding Menu bar 
+
+Day6 : Mini calendar 
