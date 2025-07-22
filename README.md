@@ -18,3 +18,5 @@ Day4 : Music Web design using HTML & CSS
 Day5 : Created a simple sliding Menu bar 
 
 Day6 : Mini calendar 
+
+Day7 : Great Zone is a simple and responsive blog website -  Project inspired by: DoSomeCoding channel
