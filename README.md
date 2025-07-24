@@ -22,3 +22,5 @@ Day6 : Mini calendar
 Day7 : Great Zone is a simple and responsive blog website -  Project inspired by: DoSomeCoding channel
 
 Day8 : A simple Toggle button
+
+Day9 : Testimonial Slider 
