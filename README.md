@@ -24,3 +24,5 @@ Day7 : Great Zone is a simple and responsive blog website -  Project inspired by
 Day8 : A simple Toggle button
 
 Day9 : Testimonial Slider 
+
+Day 10 : Real-Time Character Counter 
