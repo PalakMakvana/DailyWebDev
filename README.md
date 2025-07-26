@@ -28,3 +28,5 @@ Day9 : Testimonial Slider
 Day 10 : Real-Time Character Counter 
 
 Day 11 : 3d Effect icons 
+
+Day 12 : Card Hover Effect 
