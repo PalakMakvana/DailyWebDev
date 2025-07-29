@@ -32,3 +32,5 @@ Day 11 : 3d Effect icons
 Day 12 : Card Hover Effect 
 
 Day 13 : Quote Generator App
+
+Day 14 : Loading Bar
