@@ -36,3 +36,5 @@ Day 13 : Quote Generator App
 Day 14 : Loading Bar
 
 Day 15 : Instagram like feature using DOM
+
+Day 16 : Digital Clock
