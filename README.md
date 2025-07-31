@@ -38,3 +38,5 @@ Day 14 : Loading Bar
 Day 15 : Instagram like feature using DOM
 
 Day 16 : Digital Clock
+
+Day 17 : Age Calculator
