@@ -42,3 +42,5 @@ Day 16 : Digital Clock
 Day 17 : Age Calculator
 
 Day 18 : Multiplication App
+
+Day 19 : Loan Calculator
