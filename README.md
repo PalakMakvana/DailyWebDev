@@ -52,3 +52,5 @@ Day 21 : Month calendar
 Day 22 : Social media list menu
 
 Day 23 : English dictionary
+
+Day 24 : Note App
