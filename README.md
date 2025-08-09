@@ -1,5 +1,5 @@
 # DailyWebDev
-===========================================
+____________________________________________________________________________
 
 Daily web development projects and coding practice with HTML, CSS, JS & More!
 
@@ -54,3 +54,5 @@ Day 22 : Social media list menu
 Day 23 : English dictionary
 
 Day 24 : Note App
+
+Day 25 : Emoji rating
