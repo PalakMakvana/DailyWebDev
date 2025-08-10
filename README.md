@@ -56,3 +56,5 @@ Day 23 : English dictionary
 Day 24 : Note App
 
 Day 25 : Emoji rating
+
+Day 26 : Random color generator
