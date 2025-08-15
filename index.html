@@ -2,109 +2,34 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Developer Landing Page</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Password Generator</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <section
-      class="hero"
-      role="banner"
-      aria-label="Developer working on computer with coding screens"
-    >
-      <div class="hero-text" aria-live="polite">
-        WORK, I CAN DO FOR <span>YOU</span>
+    <div class="password-container">
+      <h2>Random Password Generator</h2>
+      <div class="input-container">
+        <input
+          type="text"
+          id="input"
+          class="input"
+          placeholder="Create Password"
+          readonly
+        />
+        <i class="far fa-copy fa-2x"></i>
       </div>
-    </section>
-
-    <section class="services" aria-label="Developer Services">
-      <article
-        class="card"
-        tabindex="0"
-        aria-labelledby="service1-title"
-        aria-describedby="service1-desc"
-      >
-        <div class="card-image">
-          <img src="img/app.jpg" alt="" onerror="this.onerror=null;" />
-        </div>
-        <div class="card-content">
-          <h4 class="card-title" id="service1-title">App Development</h4>
-          <p class="card-desc" id="service1-desc">
-            Build intuitive and powerful applications with modern design and
-            robust functionality to fit your needs.
-          </p>
-        </div>
-      </article>
-
-      <article
-        class="card"
-        tabindex="0"
-        aria-labelledby="service2-title"
-        aria-describedby="service2-desc"
-      >
-        <div class="card-image">
-          <img src="img/web.jpg" alt="" onerror="this.onerror=null;" />
-        </div>
-        <div class="card-content">
-          <h4 class="card-title" id="service2-title">Web Development</h4>
-          <p class="card-desc" id="service2-desc">
-            Create responsive, accessible websites and web apps that engage
-            users and perform flawlessly across devices.
-          </p>
-        </div>
-      </article>
-
-      <article
-        class="card"
-        tabindex="0"
-        aria-labelledby="service3-title"
-        aria-describedby="service3-desc"
-      >
-        <div class="card-image">
-          <img src="img/ui-ux.jpg" alt="" onerror="this.onerror=null;" />
-        </div>
-        <div class="card-content">
-          <h4 class="card-title" id="service3-title">UX/UI Designing</h4>
-          <p class="card-desc" id="service3-desc">
-            Design beautiful, user-centric interfaces with seamless experiences
-            that bring satisfaction to your customers.
-          </p>
-        </div>
-      </article>
-    </section>
-
-    <section
-      class="footer-container"
-      aria-label="Contact and About Information"
-    >
-      <div class="footer-section" tabindex="0">
-        <h3>Contact Me</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipiscing elit. Maximus
-          dolores excepturi libero praesentium.
-        </p>
-        <p>
-          <a
-            href="mailto:tonystark@starkindustries.com"
-            aria-label="Email Tony Stark at tonystark@starkindustries.com"
-            >tonystark@starkindustries.com</a
-          >
-        </p>
-      </div>
-      <div class="footer-section" tabindex="0">
-        <h3>About Me</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-          ipsum minus possimus, illo hic illum sunt harum.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque sed
-          odio veritatis error corrupti hic! Lorem ipsum dolor sit amet.
-        </p>
-      </div>
-    </section>
-
-    <footer role="contentinfo">OFFICIAL WEBSITE OF TONY STARK</footer>
+      <button class="btn">Generate</button>
+    </div>
+    <div class="alert-container active">Password Copied</div>
+    <script src="index.js"></script>
   </body>
 </html>
