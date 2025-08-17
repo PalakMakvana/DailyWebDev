@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="converter-card">
+        <h1>Currency Converter</h1>
+        <div class="converter-form">
+          <div class="input-group">
+            <label for="amount">Amount</label>
+            <div class="input-wrapper">
+              <span class="currency-symbol">$</span>
+              <input
+                type="number"
+                id="amount"
+                class="currency-amount"
+                placeholder="0.00"
+                style="color: #d1d5db"
+                min="0"
+                step="0.01"
+                value="1"
+                aria-label="Amount to convert"
+              />
+            </div>
+          </div>
+
+          <div class="input-group">
+            <label for="from-currency">From</label>
+            <div class="input-wrapper">
+              <img
+                src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/5dbfe88c-7ca0-4dce-ad66-c645d7400991.png"
+                alt="Flag of United States with red and white stripes and blue field with white stars"
+                class="currency-flag"
+                id="from-flag"
+              />
+              <select id="from-currency" class="currency-select">
+                <option value="USD" selected>United States Dollar (USD)</option>
+                <option value="EUR">Euro (EUR)</option>
+                <option value="GBP">British Pound (GBP)</option>
+                <option value="JPY">Japanese Yen (JPY)</option>
+                <option value="AUD">Australian Dollar (AUD)</option>
+                <option value="CAD">Canadian Dollar (CAD)</option>
+                <option value="CHF">Swiss Franc (CHF)</option>
+                <option value="CNY">Chinese Yuan (CNY)</option>
+                <option value="SEK">Swedish Krona (SEK)</option>
+                <option value="NZD">New Zealand Dollar (NZD)</option>
+                <option value="INR">Indian Rupee (INR)</option>
+              </select>
+            </div>
+          </div>
+
+          <button class="swap-btn" id="swap-btn" aria-label="Swap currencies">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <polyline points="17 1 21 5 17 9"></polyline>
+              <path d="M3 11V9a4 4 0 0 1 4-4h14"></path>
+              <polyline points="7 23 3 19 7 15"></polyline>
+              <path d="M21 13v2a4 4 0 0 1-4 4H3"></path>
+            </svg>
+          </button>
+
+          <div class="input-group">
+            <label for="to-currency">To</label>
+            <div class="input-wrapper">
+              <img
+                src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/2cb777c6-6cdd-4788-bbf7-1939063fc30a.png"
+                alt="Flag of European Union with circle of gold stars on blue background"
+                class="currency-flag"
+                id="to-flag"
+              />
+              <select id="to-currency" class="currency-select">
+                <option value="USD">United States Dollar (USD)</option>
+                <option value="EUR" selected>Euro (EUR)</option>
+                <option value="GBP">British Pound (GBP)</option>
+                <option value="JPY">Japanese Yen (JPY)</option>
+                <option value="AUD">Australian Dollar (AUD)</option>
+                <option value="CAD">Canadian Dollar (CAD)</option>
+                <option value="CHF">Swiss Franc (CHF)</option>
+                <option value="CNY">Chinese Yuan (CNY)</option>
+                <option value="SEK">Swedish Krona (SEK)</option>
+                <option value="NZD">New Zealand Dollar (NZD)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="result" id="result">
+            <p id="conversion-result">1 USD = 0.92 EUR</p>
+            <p id="inverse-result">1 EUR = 1.09 USD</p>
+          </div>
+
+          <p class="rate-info">Rates are for demonstration purposes only</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
